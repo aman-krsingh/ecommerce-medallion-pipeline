@@ -182,7 +182,7 @@ df_rfm_final = df_rfm_scored\
 df_rfm_final.groupBy("Segment")\
     .count()\
     .orderBy("count", ascending=False)\
-    .show()
+    .display()
 
 # COMMAND ----------
 
