@@ -229,3 +229,39 @@ df_rfm_final.write\
 # COMMAND ----------
 
 print("All Gold tables written successfully!")
+
+# COMMAND ----------
+
+# write gold files in CSV for analytical puspose.
+
+gold_revenue_country.coalesce(1)\
+    .write\
+    .mode("overwrite")\
+    .option("header", "true")\
+    .csv(f"abfss://gold@{storage_account}.dfs.core.windows.net/csv/revenue_by_country")
+
+gold_monthly_trend.coalesce(1)\
+    .write\
+    .mode("overwrite")\
+    .option("header", "true")\
+    .csv(f"abfss://gold@{storage_account}.dfs.core.windows.net/csv/monthly_sales_trend")
+
+gold_top_products.coalesce(1)\
+    .write\
+    .mode("overwrite")\
+    .option("header", "true")\
+    .csv(f"abfss://gold@{storage_account}.dfs.core.windows.net/csv/top_products")
+
+df_rfm_final.coalesce(1)\
+    .write\
+    .mode("overwrite")\
+    .option("header", "true")\
+    .csv(f"abfss://gold@{storage_account}.dfs.core.windows.net/csv/customer_rfm")
+
+print("CSV exports done!")
+
+
+
+# COMMAND ----------
+
+
