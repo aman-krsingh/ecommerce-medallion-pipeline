@@ -102,11 +102,11 @@ Power BI Dashboard
 ## 🔄 Pipeline Execution
 
 <p align="center">
-  <img src="images/adf_pipeline_success.png" width="100%">
+  <img src="images/adf_pipeline_success.PNG" width="100%">
 </p>
 
 ### Pipeline Workflow
-
+![banner.png](./banner.png "banner.png")
 ```text
 Copy_Raw_to_Bronze
         ↓
@@ -239,10 +239,9 @@ Open the PBIX file directly in Microsoft Power BI Desktop.
 ```text
 ecommerce-medallion-pipeline/
 │
-├── notebooks/
-│   ├── 01_bronze_ingest.py
-│   ├── 02_silver_transform.py
-│   └── 03_gold_aggregate.py
+├── 01_bronze_ingest.py
+├── 02_silver_transform.py
+├── 03_gold_aggregate.py
 │
 ├── powerbi/
 │   └── ecommerce_sales_dashboard.pbix
