@@ -106,7 +106,6 @@ Power BI Dashboard
 </p>
 
 ### Pipeline Workflow
-![banner.png](./banner.png "banner.png")
 ```text
 Copy_Raw_to_Bronze
         ↓
