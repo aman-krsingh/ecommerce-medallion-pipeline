@@ -102,7 +102,7 @@ Power BI Dashboard
 ## 🔄 Pipeline Execution
 
 <p align="center">
-  <img src="images/adf_pipeline_success.PNG" width="100%">
+  <img src="images/adf_pipeline_success.png" width="100%">
 </p>
 
 ### Pipeline Workflow
